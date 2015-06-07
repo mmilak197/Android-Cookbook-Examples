@@ -17,13 +17,16 @@ public class AndroidPlot extends Activity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+		
+		
         setContentView(R.layout.main);
         // Initialize our XYPlot reference:
         mySimpleXYPlot = (XYPlot) findViewById(R.id.mySimpleXYPlot);
  
         // Create two arrays of y-values to plot:
-        Number[] series1Numbers = {1, 8, 5, 2, 7, 4};
+        Number[] series1Numbers = {1, 8, 5, 2, 7, 5};
         Number[] series2Numbers = {4, 6, 3, 8, 2, 10};
+ 
  
         // Turn the above arrays into XYSeries:
         XYSeries series1 = new SimpleXYSeries(
